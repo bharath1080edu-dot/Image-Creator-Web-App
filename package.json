@@ -1,0 +1,10 @@
+{
+  "name": "image-creator-website",
+  "version": "1.0.0",
+  "description": "Image Creator Official Website",
+  "scripts": {
+    "start": "npx serve . -l 8080",
+    "dev": "npx serve . -l 8080"
+  }
+}
+

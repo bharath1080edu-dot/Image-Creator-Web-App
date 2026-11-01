@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 95" width="100%" height="100%" fill="none">
+  <!-- Monogram IC Exact Graphic (White Version) -->
+  <g id="exact-ic-logo-ft" transform="translate(10, 6)">
+    <!-- Letter I (Classical Tall Serif White) -->
+    <path d="M 4 10 L 28 10 C 24 14 20 18 19 24 L 19 62 C 20 68 24 72 28 76 L 4 76 C 8 72 12 68 13 62 L 13 24 C 12 18 8 14 4 10 Z" fill="#ffffff" />
+    
+    <!-- Letter C (Large Classical Serif White) -->
+    <path d="M 68 18 C 55 12 40 18 34 30 C 30 38 31 52 38 62 C 45 72 58 76 70 71 C 74 69 77 66 79 63 L 73 59 C 67 65 57 66 50 61 C 42 55 40 45 42 36 C 44 26 53 19 63 22 C 67 23 70 26 72 29 L 77 24 C 74 20 71 18 68 18 Z" fill="#ffffff" />
+    <!-- C Top Serif Hook -->
+    <polygon points="76,14 78,28 71,24" fill="#ffffff" />
+    <!-- C Bottom Serif -->
+    <polygon points="77,63 80,75 68,72" fill="#ffffff" />
+
+    <!-- Orange Rooftop Gable (Angled House Roof) -->
+    <path d="M 28 56 L 56 26 L 82 50" stroke="#e59021" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="miter" fill="none" />
+
+    <!-- 4-Square Window Panes (Under Apex) -->
+    <g transform="translate(50, 39)">
+      <rect x="0" y="0" width="5" height="5" fill="#e59021" rx="0.5" />
+      <rect x="7" y="0" width="5" height="5" fill="#e59021" rx="0.5" />
+      <rect x="0" y="7" width="5" height="5" fill="#e59021" rx="0.5" />
+      <rect x="7" y="7" width="5" height="5" fill="#e59021" rx="0.5" />
+    </g>
+
+    <!-- Monogram Bottom Text: ImAGE CREATOR -->
+    <g transform="translate(2, 85)" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="8.8" letter-spacing="0.5">
+      <text x="0" y="0" fill="#e59021">I</text>
+      <text x="4" y="0" fill="#ffffff">mAGE </text>
+      <text x="36" y="0" fill="#e59021">C</text>
+      <text x="43" y="0" fill="#ffffff">REATOR</text>
+    </g>
+  </g>
+
+  <!-- Main Horizontal Brand Signature Typography -->
+  <g id="brand-signature-ft" transform="translate(108, 16)">
+    <!-- "Image" in Pure White -->
+    <text x="0" y="38" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="38" fill="#ffffff" letter-spacing="-0.5">Image </text>
+    
+    <!-- "Creator" in Warm Golden Amber -->
+    <text x="120" y="38" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="38" fill="#e59021" letter-spacing="-0.5">Creator</text>
+    
+    <!-- Tagline with Flanking Divider Lines -->
+    <!-- Left Divider Line -->
+    <line x1="0" y1="56" x2="26" y2="56" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Serif Bold Italic Tagline -->
+    <text x="32" y="60" font-family="'Georgia', 'Times New Roman', serif" font-weight="bold" font-style="italic" font-size="12" fill="#ffffff" letter-spacing="1.5">UPVC PRODUCTS &amp; INTERIORS</text>
+    
+    <!-- Right Divider Line -->
+    <line x1="242" y1="56" x2="268" y2="56" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+  </g>
+</svg>

@@ -1,0 +1,2392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Creator | UPVC Products &amp; Interiors – Bangalore</title>
+  <meta name="description"
+    content="Image Creator - Leading manufacturer of premium UPVC Casement Windows & Doors, Sliding Windows, Sliding Balcony Doors, Fixed Windows, Top Hung Windows, Ventilators, and Modern Home Interiors in Bangalore." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════════════════════════════
+       DESIGN SYSTEM - IMAGE CREATOR BRANDING (NAVY & WARM AMBER)
+       ═══════════════════════════════════════════════════════════════ */
+    :root {
+      --brand-navy: #182848;
+      --brand-navy-dark: #0f1a30;
+      --brand-navy-light: #f0f4f9;
+      --brand-amber: #e88b12;
+      --brand-amber-hover: #cf790a;
+      --brand-amber-light: #fff7ed;
+      --brand-amber-glow: rgba(232, 139, 18, 0.22);
+      
+      --bg-white: #ffffff;
+      --bg-light: #f8fafc;
+      --bg-subtle: #f1f5f9;
+      --border-light: #e2e8f0;
+      --border-subtle: #cbd5e1;
+      
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      
+      --shadow-sm: 0 2px 8px rgba(24, 40, 72, 0.05);
+      --shadow-md: 0 8px 24px -4px rgba(24, 40, 72, 0.08), 0 2px 6px -1px rgba(24, 40, 72, 0.04);
+      --shadow-lg: 0 20px 40px -8px rgba(24, 40, 72, 0.12);
+      --shadow-xl: 0 28px 60px -12px rgba(24, 40, 72, 0.18);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-pill: 9999px;
+
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --container-max: 1280px;
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-white);
+      color: var(--text-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      color: var(--brand-navy);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    button {
+      font-family: var(--font-body);
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       TOP ANNOUNCEMENT BAR
+       ═══════════════════════════════════════════════════════════════ */
+    .top-bar {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-light);
+      padding: 9px 0;
+      font-size: 0.85rem;
+    }
+
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .top-info-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--text-body);
+      font-weight: 600;
+    }
+
+    .top-info-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .top-info-item svg {
+      color: var(--brand-amber);
+      flex-shrink: 0;
+    }
+
+    .top-info-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--brand-navy);
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MAIN NAVIGATION HEADER WITH CLEAN TEXT-ONLY DROPDOWN
+       ═══════════════════════════════════════════════════════════════ */
+    .main-header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-light);
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      gap: 20px;
+    }
+
+    .brand-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .logo-svg-box {
+      height: 52px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* NAV LINKS - SINGLE CLEAN LINE */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+    }
+
+    .nav-item {
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .nav-item a {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--brand-navy);
+      padding: 6px 2px;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .nav-item a:hover {
+      color: var(--brand-amber);
+    }
+
+    .nav-item a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2.5px;
+      background: var(--brand-amber);
+      transition: width 0.25s ease;
+      border-radius: 2px;
+    }
+
+    .nav-item a:hover::after {
+      width: 100%;
+    }
+
+    .header-ctas {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: var(--radius-pill);
+      font-size: 0.92rem;
+      font-weight: 700;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand-amber) 0%, #d97706 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px var(--brand-amber-glow);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(232, 139, 18, 0.35);
+    }
+
+    .btn-navy {
+      background: var(--brand-navy);
+      color: #ffffff;
+    }
+
+    .btn-navy:hover {
+      background: var(--brand-navy-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(24, 40, 72, 0.25);
+    }
+
+    .btn-outline {
+      background: #ffffff;
+      color: var(--brand-navy);
+      border: 1.5px solid var(--border-subtle);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--brand-amber);
+      color: var(--brand-amber);
+      background: var(--brand-amber-light);
+      transform: translateY(-2px);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HERO SECTION WITH BRIGHT SUNLIT HOME BACKGROUND
+       ═══════════════════════════════════════════════════════════════ */
+    .hero-section {
+      position: relative;
+      min-height: 84vh;
+      display: flex;
+      align-items: center;
+      background-image: url('assets/hero.jpg');
+      background-size: cover;
+      background-position: center center;
+      padding: 80px 0 110px;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.98) 0%,
+        rgba(255, 255, 255, 0.94) 45%,
+        rgba(255, 255, 255, 0.65) 75%,
+        rgba(255, 255, 255, 0.25) 100%
+      );
+      z-index: 1;
+    }
+
+    .hero-container {
+      position: relative;
+      z-index: 2;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 24px;
+      width: 100%;
+    }
+
+    .hero-content {
+      max-width: 680px;
+    }
+
+    /* ANIMATED HERO TAGLINE QUOTE BADGE */
+    .hero-quote-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 18px;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      border: 1.5px solid rgba(232, 139, 18, 0.45);
+      border-radius: var(--radius-pill);
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(24, 40, 72, 0.06);
+    }
+
+    .quote-sparkle {
+      color: var(--brand-amber);
+      font-size: 1.05rem;
+      line-height: 1;
+      animation: pulseSparkle 2.2s infinite ease-in-out;
+    }
+
+    @keyframes pulseSparkle {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.3); opacity: 1; color: #f59e0b; }
+    }
+
+    .animated-quote-text {
+      font-size: 0.94rem;
+      font-weight: 800;
+      color: var(--brand-navy);
+      letter-spacing: -0.01em;
+      display: inline-block;
+      min-height: 1.4em;
+      transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .animated-quote-text.fade-out {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+
+    .animated-quote-text.fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-title {
+      font-size: clamp(2.3rem, 4.2vw, 3.6rem);
+      font-weight: 900;
+      line-height: 1.12;
+      color: var(--brand-navy);
+      margin-bottom: 18px;
+    }
+
+    .hero-title .amber-text {
+      color: var(--brand-amber);
+    }
+
+    .hero-subtitle {
+      font-size: 1.12rem;
+      color: var(--text-body);
+      line-height: 1.65;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .hero-trust-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1.5px solid rgba(226, 232, 240, 0.9);
+    }
+
+    .trust-stat-item h4 {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--brand-navy);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .trust-stat-item h4 span {
+      color: var(--brand-amber);
+    }
+
+    .trust-stat-item p {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       4 FLOATING PILLAR CARDS (OVERLAPPING HERO BOTTOM)
+       ═══════════════════════════════════════════════════════════════ */
+    .floating-pillars-section {
+      position: relative;
+      z-index: 10;
+      margin-top: -65px;
+      margin-bottom: 60px;
+    }
+
+    .pillars-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .pillar-card {
+      background: #ffffff;
+      border: 1.5px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 26px 22px;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .pillar-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--brand-navy), var(--brand-amber));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--brand-amber);
+    }
+
+    .pillar-card:hover::before {
+      opacity: 1;
+    }
+
+    .pillar-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .pillar-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: var(--brand-navy-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--brand-navy);
+      transition: var(--transition);
+      border: 1px solid #dbeafe;
+    }
+
+    .pillar-card:hover .pillar-icon-box {
+      background: var(--brand-amber-light);
+      color: var(--brand-amber);
+      border-color: #fed7aa;
+    }
+
+    .pillar-card h3 {
+      font-size: 1.16rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: var(--brand-navy);
+    }
+
+    .pillar-card p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+
+    .pillar-micro-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border-light);
+    }
+
+    .micro-badge-item {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--brand-navy);
+      background: var(--bg-light);
+      padding: 3px 7px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border: 1px solid var(--border-light);
+    }
+
+    .micro-badge-item svg {
+      color: var(--brand-amber);
+    }
+
+    .pillar-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--brand-amber);
+      transition: var(--transition);
+    }
+
+    .pillar-card-link:hover {
+      color: var(--brand-amber-hover);
+      gap: 10px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       SECTION HEADERS
+       ═══════════════════════════════════════════════════════════════ */
+    .section-header-center {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 40px;
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--brand-amber);
+      background: var(--brand-amber-light);
+      padding: 5px 14px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 14px;
+      border: 1px solid #fed7aa;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      font-weight: 900;
+      margin-bottom: 16px;
+      color: var(--brand-navy);
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       UPVC PRODUCTS 3-CARD HORIZONTAL SLIDER (ON THE SAME LINE)
+       ═══════════════════════════════════════════════════════════════ */
+    .products-section {
+      padding: 85px 0;
+      background: var(--bg-white);
+      position: relative;
+    }
+
+    .products-carousel-wrapper {
+      position: relative;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    .products-carousel-viewport {
+      overflow: hidden;
+      position: relative;
+      padding: 14px 4px 20px;
+    }
+
+    .products-track {
+      display: flex;
+      gap: 24px;
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+
+    .prod-card-slide {
+      flex: 0 0 calc((100% - 48px) / 3);
+      max-width: calc((100% - 48px) / 3);
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1.5px solid var(--border-light);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .prod-card-slide:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--brand-amber);
+    }
+
+    .prod-img-wrap {
+      position: relative;
+      height: 230px;
+      overflow: hidden;
+      background: #f1f5f9;
+    }
+
+    .prod-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .prod-card-slide:hover .prod-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    .prod-badge-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(6px);
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--brand-navy);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+    }
+
+    .prod-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .prod-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .prod-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .prod-highlights-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 22px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .prod-highlight-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.84rem;
+      color: var(--text-body);
+      font-weight: 600;
+    }
+
+    .prod-highlight-item svg {
+      color: var(--brand-amber);
+      flex-shrink: 0;
+    }
+
+    /* FLOATING SIDE ARROW BUTTONS */
+    .prod-arrow-btn {
+      position: absolute;
+      top: 48%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: var(--brand-navy);
+      border: 1.5px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(24, 40, 72, 0.14);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 10;
+    }
+
+    .prod-arrow-prev {
+      left: -6px;
+    }
+
+    .prod-arrow-next {
+      right: -6px;
+    }
+
+    .prod-arrow-btn:hover {
+      background: var(--brand-navy);
+      color: #ffffff;
+      border-color: var(--brand-navy);
+      transform: translateY(-50%) scale(1.1);
+      box-shadow: 0 12px 28px rgba(24, 40, 72, 0.24);
+    }
+
+    .prod-dots-nav-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    .prod-dots-nav {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .prod-dot-btn {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #cbd5e1;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .prod-dot-btn.active {
+      width: 28px;
+      border-radius: var(--radius-pill);
+      background: var(--brand-amber);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       MODULAR INTERIORS & ENHANCED SLIDER
+       ═══════════════════════════════════════════════════════════════ */
+    .interiors-spotlight-section {
+      padding: 90px 0;
+      background: linear-gradient(135deg, var(--brand-navy) 0%, #0f1a30 100%);
+      color: #ffffff;
+    }
+
+    .interiors-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.08fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .interiors-text h2 {
+      color: #ffffff;
+      font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .interiors-text h2 span {
+      color: var(--brand-amber);
+    }
+
+    .interiors-text p {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .interiors-feature-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 34px;
+    }
+
+    .int-box {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      backdrop-filter: blur(8px);
+    }
+
+    .int-box h4 {
+      color: #ffffff;
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .int-box h4 svg {
+      color: var(--brand-amber);
+    }
+
+    .int-box p {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* ENHANCED INTERIOR CAROUSEL */
+    .interiors-slider-wrap {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      background: #0f1a30;
+      aspect-ratio: 4 / 3;
+      max-height: 480px;
+    }
+
+    .slider-progress-track {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.15);
+      z-index: 20;
+    }
+
+    .slider-progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--brand-amber), #f59e0b);
+      transition: width 0.1s linear;
+    }
+
+    .slider-track {
+      display: flex;
+      width: 400%;
+      height: 100%;
+      transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .slide-item {
+      width: 25%;
+      height: 100%;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .slide-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 1.2s ease;
+    }
+
+    .slide-item:hover img {
+      transform: scale(1.03);
+    }
+
+    .slide-caption-badge {
+      position: absolute;
+      bottom: 22px;
+      left: 22px;
+      background: rgba(15, 26, 48, 0.9);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(232, 139, 18, 0.6);
+      color: #ffffff;
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 0.86rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      z-index: 10;
+    }
+
+    .slide-caption-badge span.dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--brand-amber);
+      box-shadow: 0 0 8px var(--brand-amber);
+    }
+
+    .slider-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--brand-navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 15;
+      transition: var(--transition);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+      border: none;
+    }
+
+    .slider-nav-btn:hover {
+      background: #ffffff;
+      color: var(--brand-amber);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .slider-prev {
+      left: 14px;
+    }
+
+    .slider-next {
+      right: 14px;
+    }
+
+    .slider-dots {
+      position: absolute;
+      bottom: 22px;
+      right: 22px;
+      display: flex;
+      gap: 7px;
+      z-index: 15;
+    }
+
+    .slider-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.45);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .slider-dot.active {
+      width: 24px;
+      border-radius: var(--radius-pill);
+      background: var(--brand-amber);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       OUR 4-STEP STREAMLINED PROCESS
+       ═══════════════════════════════════════════════════════════════ */
+    .process-section {
+      padding: 90px 0;
+      background: var(--bg-light);
+    }
+
+    .process-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+
+    .process-step-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 30px 24px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step-number-pill {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--brand-navy);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 10px rgba(24, 40, 72, 0.2);
+    }
+
+    .process-step-card:nth-child(2) .step-number-pill {
+      background: var(--brand-amber);
+    }
+
+    .process-step-card h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .process-step-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       FREE SITE MEASUREMENT & CONSULTATION SECTION
+       ═══════════════════════════════════════════════════════════════ */
+    .booking-section {
+      padding: 90px 0;
+      background: var(--bg-white);
+    }
+
+    .booking-card {
+      background: #ffffff;
+      border: 1.5px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 48px;
+      box-shadow: var(--shadow-xl);
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 48px;
+    }
+
+    .booking-left h3 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .booking-left p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .contact-card-box {
+      background: var(--brand-navy-light);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      border: 1px solid #dbeafe;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-row-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.9rem;
+    }
+
+    .contact-row-item svg {
+      color: var(--brand-amber);
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .contact-row-item strong {
+      color: var(--brand-navy);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    /* FORM STYLES */
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .form-full {
+      grid-column: span 2;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--brand-navy);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      color: var(--text-dark);
+      background: #ffffff;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      border-color: var(--brand-amber);
+      box-shadow: 0 0 0 3px var(--brand-amber-glow);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════ */
+    .site-footer {
+      background: var(--brand-navy-dark);
+      color: #94a3b8;
+      padding: 80px 0 30px;
+      border-top: 1px solid #1e293b;
+    }
+
+    .footer-grid-4 {
+      display: grid;
+      grid-template-columns: 1.5fr 1.1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .footer-col h4 {
+      color: #ffffff;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col ul li a {
+      font-size: 0.88rem;
+      color: #94a3b8;
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--brand-amber);
+      padding-left: 4px;
+    }
+
+    .footer-bottom {
+      padding-top: 30px;
+      border-top: 1px solid #1e293b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.82rem;
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+    .floating-action-pill {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .float-wa-btn {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #25d366;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      transition: var(--transition);
+    }
+
+    .float-wa-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* TOAST */
+    #globalToast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--brand-navy);
+      color: #ffffff;
+      padding: 14px 24px;
+      border-radius: var(--radius-pill);
+      font-size: 0.9rem;
+      font-weight: 700;
+      box-shadow: var(--shadow-xl);
+      z-index: 999999;
+      opacity: 0;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--brand-amber);
+    }
+
+    #globalToast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .pillars-grid-4, .process-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .prod-card-slide {
+        flex: 0 0 calc((100% - 24px) / 2);
+        max-width: calc((100% - 24px) / 2);
+      }
+      .interiors-grid, .booking-card {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .products-carousel-wrapper {
+        padding: 0 10px;
+      }
+      .prod-arrow-prev {
+        left: -12px;
+      }
+      .prod-arrow-next {
+        right: -12px;
+      }
+      .pillars-grid-4, .process-grid-4, .footer-grid-4 {
+        grid-template-columns: 1fr;
+      }
+      .prod-card-slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .hero-section {
+        padding: 50px 0 80px;
+      }
+      .hero-trust-bar {
+        grid-template-columns: 1fr;
+      }
+      .booking-card {
+        padding: 24px;
+      }
+      .form-grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .form-full {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       TOP ANNOUNCEMENT BAR
+       ═══════════════════════════════════════════════════════════════ -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-info-left">
+        <div class="top-info-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Tatanagar Main Road, Bangalore - 560094</span>
+        </div>
+      </div>
+      <div class="top-info-right">
+        <div class="top-info-item">
+          <span>Custom UPVC Products &amp; Modular Interiors Manufacturer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       STICKY HEADER WITH CLEAN FONT-ONLY DROPDOWN MENU
+       ═══════════════════════════════════════════════════════════════ -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-inner">
+        
+        <!-- OFFICIAL EXACT LOGO AS UPLOADED -->
+        <a href="#" class="brand-logo-wrap">
+          <div class="logo-svg-box">
+            <img src="assets/brand-logo.png" alt="Image Creator" style="height: 52px; width: auto; display: block; object-fit: contain;" />
+          </div>
+        </a>
+
+        <!-- NAV LINKS IN A SINGLE CLEAN LINE -->
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-item"><a href="#products">Doors &amp; Windows</a></li>
+            <li class="nav-item"><a href="#interiors">Modular Interiors</a></li>
+            <li class="nav-item"><a href="#process">How It Works</a></li>
+            <li class="nav-item"><a href="#booking">Free Site Survey</a></li>
+            <li class="nav-item"><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- HEADER CTAS -->
+        <div class="header-ctas">
+          <a href="#booking" class="btn btn-outline" style="padding: 10px 20px; font-size: 0.88rem;">Free Site Survey</a>
+          <a href="https://wa.me/919945263546?text=Hi%20Image%20Creator%2C%20I%20need%20a%20quote%20for%20UPVC%20Windows%20%26%20Interiors" target="_blank" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem; background: #25D366; color: #fff; box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.49.61-.6.73-.11.13-.23.14-.42.05-.19-.09-.8-.29-1.53-.94-.57-.5-.95-1.12-1.06-1.31-.11-.19-.01-.29.08-.38.09-.09.19-.23.29-.35.09-.12.13-.2.19-.34.07-.14.03-.26-.02-.35-.05-.09-.43-1.04-.6-1.43-.16-.38-.32-.33-.43-.33h-.37c-.13 0-.34.05-.51.24-.18.19-.68.66-.68 1.62 0 .95.69 1.88.79 2.01.09.14 1.36 2.08 3.3 2.91.46.2.82.32 1.1.41.46.15.89.13 1.22.08.37-.06 1.12-.46 1.28-.9.16-.44.16-.82.11-.9-.04-.08-.17-.13-.36-.22z"/>
+            </svg>
+            <span>WhatsApp Us</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO SECTION WITH BRIGHT SUNLIT HOME BACKGROUND
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+
+        <!-- ANIMATED HERO QUOTE ROTATOR -->
+        <div class="hero-quote-badge">
+          <span class="quote-sparkle">✦</span>
+          <span class="animated-quote-text" id="animatedQuote">“Crafting Peaceful Homes with Architectural Precision.”</span>
+        </div>
+
+        <h1 class="hero-title">
+          Where Luxury Windows Meet <span class="amber-text">Masterpiece Interiors.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Transform your home with Bangalore's leading custom UPVC manufacturer. Precision-engineered casement systems, sliding balcony doors, fixed picture windows, top-hung units, and complete turnkey interior solutions.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary" style="padding: 14px 28px; font-size: 1rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Book Free Site Measurement</span>
+          </a>
+          <a href="#products" class="btn btn-navy" style="padding: 14px 26px; font-size: 1rem;">
+            <span>Explore Collections</span>
+          </a>
+        </div>
+
+        <!-- HERO TRUST STATS -->
+        <div class="hero-trust-bar">
+          <div class="trust-stat-item">
+            <h4>Quality <span>Assurance</span></h4>
+            <p>Certified Lead-Free Profiles</p>
+          </div>
+          <div class="trust-stat-item">
+            <h4>100% <span>Custom</span></h4>
+            <p>Precision CNC Factory Build</p>
+          </div>
+          <div class="trust-stat-item">
+            <h4>Bangalore <span>Direct</span></h4>
+            <p>Zero Middleman Markup</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       4 FLOATING PILLAR CARDS (OVERLAPPING HERO BOTTOM)
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="floating-pillars-section">
+    <div class="container">
+      <div class="pillars-grid-4">
+        
+        <!-- CARD 1: UPVC WINDOWS & DOORS -->
+        <div class="pillar-card">
+          <div>
+            <div class="pillar-top-row">
+              <div class="pillar-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+            </div>
+            <h3>UPVC Windows &amp; Doors</h3>
+            <p>Precision casement windows &amp; doors, sliding balcony systems, fixed picture windows, top-hung and ventilators.</p>
+            <div class="pillar-micro-badges">
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Casement &amp; Sliding
+              </span>
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Fixed &amp; Top Hung
+              </span>
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Louver Ventilators
+              </span>
+            </div>
+          </div>
+          <a href="#products" class="pillar-card-link">
+            <span>Explore All Window Styles</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- CARD 2: MODULAR HOME INTERIORS -->
+        <div class="pillar-card">
+          <div>
+            <div class="pillar-top-row">
+              <div class="pillar-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3>Modular Home Interiors</h3>
+            <p>Complete turnkey interior solutions: bespoke modular kitchens, designer wardrobes, TV units, and false ceilings.</p>
+            <div class="pillar-micro-badges">
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Marine BWP Ply
+              </span>
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Soft-Close Fittings
+              </span>
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Custom 3D
+              </span>
+            </div>
+          </div>
+          <a href="#interiors" class="pillar-card-link">
+            <span>View Interior Services</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- CARD 3: 1-DAY CLEAN INSTALLATION -->
+        <div class="pillar-card">
+          <div>
+            <div class="pillar-top-row">
+              <div class="pillar-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3>1-Day Clean Installation</h3>
+            <p>Dust-free, laser-guided installation executed by our certified master technicians with silicone weather sealing.</p>
+            <div class="pillar-micro-badges">
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                0% Wall Chipping
+              </span>
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Silicone Gasket
+              </span>
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Dust Cleanup
+              </span>
+            </div>
+          </div>
+          <a href="#process" class="pillar-card-link">
+            <span>See 4-Step Process</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- CARD 4: CERTIFIED QUALITY ASSURANCE -->
+        <div class="pillar-card">
+          <div>
+            <div class="pillar-top-row">
+              <div class="pillar-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3>Certified Quality Assurance</h3>
+            <p>Manufactured with high-grade lead-free profiles, termite-proof materials, and dedicated after-sales support.</p>
+            <div class="pillar-micro-badges">
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                100% Termite Proof
+              </span>
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                UV Color Lock
+              </span>
+              <span class="micro-badge-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Dedicated Support
+              </span>
+            </div>
+          </div>
+          <a href="#booking" class="pillar-card-link">
+            <span>Book Free Survey</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       UPVC PRODUCTS 3-CARD HORIZONTAL SLIDER (ON THE SAME LINE)
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="products-section" id="products">
+    <div class="container">
+      
+      <div class="section-header-center">
+        <div class="section-badge">Precision Manufactured in Bangalore</div>
+        <h2 class="section-title">Our Complete UPVC Range</h2>
+        <p class="section-desc">Custom-engineered UPVC window and door systems designed for superior noise reduction, weather sealing, and zero maintenance.</p>
+      </div>
+
+      <!-- CAROUSEL WRAPPER WITH FLOATING SIDE ARROWS -->
+      <div class="products-carousel-wrapper" onmouseenter="stopProductSlider()" onmouseleave="startProductSlider()">
+        
+        <button type="button" class="prod-arrow-btn prod-arrow-prev" onclick="prevProductSlide()" aria-label="Previous Products">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="products-carousel-viewport" id="productViewport">
+          <div class="products-track" id="productsTrack">
+            
+            <!-- 1: CASEMENT WINDOWS & DOORS -->
+            <div class="prod-card-slide" id="prod-card-0">
+              <div class="prod-img-wrap">
+                <img src="assets/casement.jpg" alt="UPVC Casement Windows & Doors Bangalore" loading="lazy" />
+                <div class="prod-badge-tag">★ Maximum Seal</div>
+              </div>
+              <div class="prod-content">
+                <div>
+                  <h3 class="prod-title">Casement Windows &amp; Doors</h3>
+                  <p class="prod-desc">Side-hung outward or inward opening sashes equipped with multi-point locking cams, friction stays, and airtight double EPDM rubber gaskets.</p>
+                  
+                  <div class="prod-highlights-list">
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>100% Airtight &amp; Rainwater Sealed</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Multi-Point Security Locking Cams</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Heavy-Duty Friction Stays</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#booking" class="btn btn-navy" style="width: 100%;">Enquire For Free Quote</a>
+              </div>
+            </div>
+
+            <!-- 2: SLIDING WINDOWS -->
+            <div class="prod-card-slide" id="prod-card-1">
+              <div class="prod-img-wrap">
+                <img src="assets/sliding.jpg" alt="UPVC Sliding Windows Bangalore" loading="lazy" />
+                <div class="prod-badge-tag">Space-Saving</div>
+              </div>
+              <div class="prod-content">
+                <div>
+                  <h3 class="prod-title">Sliding Windows</h3>
+                  <p class="prod-desc">Smooth horizontal sliding sashes on multi-track channels, ideal for bedrooms, kitchens, and balconies where interior space is valued.</p>
+                  
+                  <div class="prod-highlights-list">
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Whisper-Glide Nylon/SS Rollers</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>2-Track &amp; 3-Track Configurations</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Weather Wool-Pile Interlocks</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#booking" class="btn btn-navy" style="width: 100%;">Enquire For Free Quote</a>
+              </div>
+            </div>
+
+            <!-- 3: SLIDING BALCONY DOORS -->
+            <div class="prod-card-slide" id="prod-card-2">
+              <div class="prod-img-wrap">
+                <img src="assets/french-doors.jpg" alt="UPVC Sliding Balcony Doors Bangalore" loading="lazy" />
+                <div class="prod-badge-tag">Panoramic Balcony</div>
+              </div>
+              <div class="prod-content">
+                <div>
+                  <h3 class="prod-title">Sliding Balcony Doors</h3>
+                  <p class="prod-desc">Wide-span architectural sliding doors with galvanized steel internal reinforcement, multi-panel opening, and integrated water drainage.</p>
+                  
+                  <div class="prod-highlights-list">
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Heavy-Load Stainless Steel Tracks</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Toughened Clear / Tinted Glass</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Anti-Lift Safety Interlock System</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#booking" class="btn btn-navy" style="width: 100%;">Enquire For Free Quote</a>
+              </div>
+            </div>
+
+            <!-- 4: FIXED WINDOWS -->
+            <div class="prod-card-slide" id="prod-card-3">
+              <div class="prod-img-wrap">
+                <img src="assets/fixed-window.jpg" alt="UPVC Fixed Picture Windows Bangalore" loading="lazy" />
+                <div class="prod-badge-tag">Panoramic Daylight</div>
+              </div>
+              <div class="prod-content">
+                <div>
+                  <h3 class="prod-title">Fixed Windows</h3>
+                  <p class="prod-desc">Non-operable picture windows engineered to bring unobstructed outdoor vistas and abundant natural light into stairwells, living rooms, and facades.</p>
+                  
+                  <div class="prod-highlights-list">
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Maximum Natural Light &amp; Clean View</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Zero Air Leakage &amp; Thermal Insulation</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Can Combine with Openable Sashes</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#booking" class="btn btn-navy" style="width: 100%;">Enquire For Free Quote</a>
+              </div>
+            </div>
+
+            <!-- 5: TOP HUNG WINDOWS -->
+            <div class="prod-card-slide" id="prod-card-4">
+              <div class="prod-img-wrap">
+                <img src="assets/top-hung.jpg" alt="UPVC Top Hung Awning Windows Bangalore" loading="lazy" />
+                <div class="prod-badge-tag">Rain-Safe Airflow</div>
+              </div>
+              <div class="prod-content">
+                <div>
+                  <h3 class="prod-title">Top Hung Windows</h3>
+                  <p class="prod-desc">Awning windows hinged at the top opening outward from the bottom, permitting continuous fresh airflow even during heavy rainfall.</p>
+                  
+                  <div class="prod-highlights-list">
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Rain-Deflecting Angled Opening</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Smooth Cockspur / Cam Handle Lock</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Ideal for Kitchens &amp; Upper Walls</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#booking" class="btn btn-navy" style="width: 100%;">Enquire For Free Quote</a>
+              </div>
+            </div>
+
+            <!-- 6: VENTILATORS -->
+            <div class="prod-card-slide" id="prod-card-5">
+              <div class="prod-img-wrap">
+                <img src="assets/ventilator.jpg" alt="UPVC Louver Ventilators Bangalore" loading="lazy" />
+                <div class="prod-badge-tag">Moisture Control</div>
+              </div>
+              <div class="prod-content">
+                <div>
+                  <h3 class="prod-title">Ventilators</h3>
+                  <p class="prod-desc">Custom bathroom, toilet, and utility room ventilators with fixed or adjustable louvers, obscure privacy glass, and exhaust fan provisions.</p>
+                  
+                  <div class="prod-highlights-list">
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Frosted / Pinhead Privacy Glass</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Integrated Exhaust Fan Cutout</span>
+                    </div>
+                    <div class="prod-highlight-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>100% Water &amp; Steam Resistant</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#booking" class="btn btn-navy" style="width: 100%;">Enquire For Free Quote</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button type="button" class="prod-arrow-btn prod-arrow-next" onclick="nextProductSlide()" aria-label="Next Products">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- BOTTOM STEP DOTS -->
+      <div class="prod-dots-nav-bottom">
+        <div class="prod-dots-nav" id="prodDotsNav">
+          <div class="prod-dot-btn active" onclick="goToProductSlide(0)"></div>
+          <div class="prod-dot-btn" onclick="goToProductSlide(1)"></div>
+          <div class="prod-dot-btn" onclick="goToProductSlide(2)"></div>
+          <div class="prod-dot-btn" onclick="goToProductSlide(3)"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       MODULAR INTERIORS & COMPLETE HOME SOLUTIONS
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="interiors-spotlight-section" id="interiors">
+    <div class="container">
+      <div class="interiors-grid">
+        
+        <div class="interiors-text">
+          <h2>Bespoke Home Interiors by <br /><span>Image Creator</span></h2>
+          <p>
+            Beyond world-class UPVC systems, our master interior craftsmen design and execute modern residential spaces with premium materials, water-resistant plywood, and soft-close fittings.
+          </p>
+
+          <div class="interiors-feature-boxes">
+            <div class="int-box">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                <span>Modular Kitchens</span>
+              </h4>
+              <p>Acrylic, PU &amp; Laminate finishes with tandem drawers, pull-out larders and quartz countertops.</p>
+            </div>
+            <div class="int-box">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect></svg>
+                <span>Designer Wardrobes</span>
+              </h4>
+              <p>Floor-to-ceiling sliding &amp; hinged wardrobes with integrated LED profile lighting.</p>
+            </div>
+            <div class="int-box">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"></rect></svg>
+                <span>TV Units &amp; Ceilings</span>
+              </h4>
+              <p>Contemporary fluted panels, marble-finish louvers, and cove false ceiling designs.</p>
+            </div>
+            <div class="int-box">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span>Balcony Enclosures</span>
+              </h4>
+              <p>Acoustic UPVC glass enclosures to extend your living space with zero rain splash.</p>
+            </div>
+          </div>
+
+          <a href="#booking" class="btn btn-primary" style="padding: 13px 26px;">Book Free Interior Consultation</a>
+        </div>
+
+        <!-- ENHANCED AUTO-SLIDING INTERIORS CAROUSEL -->
+        <div class="interiors-slider-wrap" id="interiorSlider" onmouseenter="stopAutoSlide()" onmouseleave="startAutoSlide()">
+          
+          <!-- TOP PROGRESS TIMER BAR -->
+          <div class="slider-progress-track">
+            <div class="slider-progress-bar" id="interiorProgress"></div>
+          </div>
+
+          <div class="slider-track" id="interiorTrack">
+            <!-- SLIDE 1: MODULAR KITCHEN -->
+            <div class="slide-item">
+              <img src="assets/interior-kitchen.jpg" alt="Modern Modular Kitchen by Image Creator" />
+              <div class="slide-caption-badge">
+                <span class="dot"></span>
+                <span>Custom Modular Kitchen &amp; Quartz Countertops</span>
+              </div>
+            </div>
+
+            <!-- SLIDE 2: WARDROBE & DRESSING -->
+            <div class="slide-item">
+              <img src="assets/interior-wardrobe.jpg" alt="Designer Wardrobe and Backlit Dressing Mirror" />
+              <div class="slide-caption-badge">
+                <span class="dot"></span>
+                <span>Designer Wardrobe &amp; Backlit Dressing Unit</span>
+              </div>
+            </div>
+
+            <!-- SLIDE 3: TV CONSOLE & FLUTED WALL -->
+            <div class="slide-item">
+              <img src="assets/interior-tv.jpg" alt="Fluted TV Wall Unit and Floating Console" />
+              <div class="slide-caption-badge">
+                <span class="dot"></span>
+                <span>Fluted Wood TV Console &amp; Ambient Lighting</span>
+              </div>
+            </div>
+
+            <!-- SLIDE 4: LIVING ROOM & CEILING -->
+            <div class="slide-item">
+              <img src="assets/interior-living.jpg" alt="Luxury Living Room with Cove Ceiling" />
+              <div class="slide-caption-badge">
+                <span class="dot"></span>
+                <span>Luxury Living Room &amp; Cove False Ceiling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ARROW BUTTONS -->
+          <button type="button" class="slider-nav-btn slider-prev" onclick="prevSlide()" aria-label="Previous Slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button type="button" class="slider-nav-btn slider-next" onclick="nextSlide()" aria-label="Next Slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- NAVIGATION DOTS -->
+          <div class="slider-dots">
+            <div class="slider-dot active" onclick="goToSlide(0)"></div>
+            <div class="slider-dot" onclick="goToSlide(1)"></div>
+            <div class="slider-dot" onclick="goToSlide(2)"></div>
+            <div class="slider-dot" onclick="goToSlide(3)"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       OUR 4-STEP STREAMLINED PROCESS
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="process-section" id="process">
+    <div class="container">
+      
+      <div class="section-header-center">
+        <div class="section-badge">Seamless Execution</div>
+        <h2 class="section-title">How We Deliver Excellence in 4 Steps</h2>
+        <p class="section-desc">From initial site measurement to final handover, experience a completely hassle-free process.</p>
+      </div>
+
+      <div class="process-grid-4">
+        
+        <!-- STEP 1 -->
+        <div class="process-step-card">
+          <div class="step-number-pill">01</div>
+          <h3>Free Site Visit</h3>
+          <p>Our senior engineer visits your site in Bangalore with live profile samples and laser measuring instruments.</p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="process-step-card">
+          <div class="step-number-pill">02</div>
+          <h3>Detailed Estimate</h3>
+          <p>You receive an itemized, transparent quotation with zero hidden fees and custom design options.</p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="process-step-card">
+          <div class="step-number-pill">03</div>
+          <h3>Factory Fabrication</h3>
+          <p>Windows and interior components are CNC-fabricated in our Bangalore facility to millimeter precision.</p>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="process-step-card">
+          <div class="step-number-pill">04</div>
+          <h3>Clean Handover</h3>
+          <p>Dust-free installation, silicone weather sealing, site cleanup, and warranty handover.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       BOOK FREE SITE MEASUREMENT & CONSULTATION
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="booking-section" id="booking">
+    <div class="container">
+      
+      <div class="booking-card">
+        
+        <!-- LEFT DETAILS -->
+        <div class="booking-left">
+          <div class="section-badge">Zero Obligation</div>
+          <h3>Book a Free In-Home Site Measurement</h3>
+          <p>Have an engineer visit your home, villa, or apartment anywhere in Bangalore for accurate measurements and expert consultation.</p>
+
+          <div class="contact-card-box" id="contact">
+            <div class="contact-row-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div>
+                <strong>Email Address:</strong>
+                <span>imagecreatorinteriors@outlook.com</span>
+              </div>
+            </div>
+
+            <div class="contact-row-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div>
+                <strong>Office &amp; Factory Address:</strong>
+                <span>9th Cross, GBH Layout, Tatanagar Main Road, Near UIDAI Office, Bangalore - 560094</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="booking-right">
+          <form id="leadForm" onsubmit="handleBooking(event)">
+            <div class="form-grid-2">
+              
+              <div class="form-group">
+                <label for="leadName">Full Name *</label>
+                <input type="text" id="leadName" class="form-control" placeholder="e.g. Ramesh Kumar" required />
+              </div>
+
+              <div class="form-group">
+                <label for="leadPhone">Contact Number *</label>
+                <input type="tel" id="leadPhone" class="form-control" placeholder="e.g. 9945263546" required />
+              </div>
+
+              <div class="form-group form-full">
+                <label for="leadLoc">Location / Area in Bangalore *</label>
+                <input type="text" id="leadLoc" class="form-control" placeholder="e.g. Sahakarnagar, Hebbal, Yelahanka" required />
+              </div>
+
+              <div class="form-group">
+                <label for="leadService">Select Requirement</label>
+                <select id="leadService" class="form-control">
+                  <option value="UPVC Windows & Doors" selected>UPVC Windows &amp; Doors</option>
+                  <option value="Balcony Enclosure">Balcony Glass Enclosure</option>
+                  <option value="Full Home Interiors">Modular Kitchen &amp; Interiors</option>
+                  <option value="Both UPVC & Interiors">Both UPVC &amp; Interiors</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="leadDate">Preferred Date</label>
+                <input type="date" id="leadDate" class="form-control" />
+              </div>
+
+              <div class="form-group form-full">
+                <label for="leadNotes">Special Notes (Optional)</label>
+                <input type="text" id="leadNotes" class="form-control" placeholder="e.g. 3BHK apartment, sliding balcony doors and kitchen" />
+              </div>
+
+              <div class="form-group form-full">
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 1rem;">
+                  Submit Request &amp; Get Free Quote
+                </button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid-4">
+        
+        <!-- COL 1 -->
+        <div class="footer-col">
+          <div class="brand-logo-wrap" style="margin-bottom: 18px; background: #ffffff; padding: 6px 14px; border-radius: 8px; display: inline-flex; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+            <img src="assets/brand-logo.png" alt="Image Creator" style="height: 48px; width: auto; display: block; object-fit: contain;" />
+          </div>
+          <p style="font-size: 0.88rem; line-height: 1.6; margin-bottom: 18px;">
+            Image Creator delivers precision-crafted UPVC window and door systems and turnkey modular interiors tailored for modern living across Bangalore.
+          </p>
+        </div>
+
+        <!-- COL 2: UPVC SOLUTIONS (PROPER DEFINED TERMS) -->
+        <div class="footer-col">
+          <h4>UPVC Solutions</h4>
+          <ul>
+            <li><a href="#products" onclick="selectProductFromNav(0)">Casement Windows &amp; Doors</a></li>
+            <li><a href="#products" onclick="selectProductFromNav(1)">Sliding Windows</a></li>
+            <li><a href="#products" onclick="selectProductFromNav(2)">Sliding Balcony Doors</a></li>
+            <li><a href="#products" onclick="selectProductFromNav(3)">Fixed Windows</a></li>
+            <li><a href="#products" onclick="selectProductFromNav(4)">Top Hung Windows</a></li>
+            <li><a href="#products" onclick="selectProductFromNav(5)">Ventilators</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 3: INTERIOR SERVICES -->
+        <div class="footer-col">
+          <h4>Interior Services</h4>
+          <ul>
+            <li><a href="#interiors">Custom Modular Kitchens</a></li>
+            <li><a href="#interiors">Designer Wardrobes</a></li>
+            <li><a href="#interiors">TV Wall Units &amp; Louvers</a></li>
+            <li><a href="#interiors">False Ceiling Lighting</a></li>
+            <li><a href="#interiors">Balcony Enclosures</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 4: BANGALORE ADDRESS -->
+        <div class="footer-col">
+          <h4>Bangalore Address</h4>
+          <p style="font-size: 0.86rem; line-height: 1.6; margin-bottom: 14px;">
+            9th Cross, GBH Layout, Tatanagar Main Road, Near UIDAI Office, Bangalore - 560094
+          </p>
+          <p style="font-size: 0.84rem; color: var(--brand-amber); margin-bottom: 14px;">
+            <strong>Email:</strong> imagecreatorinteriors@outlook.com
+          </p>
+          <a href="#booking" class="btn btn-primary" style="padding: 9px 18px; font-size: 0.84rem; width: 100%;">
+            Book Free Site Visit
+          </a>
+        </div>
+
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+      <div class="footer-bottom">
+        <div>© 2026 Image Creator – UPVC Products &amp; Interiors. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <div class="floating-action-pill">
+    <a href="https://wa.me/919945263546?text=Hi%20Image%20Creator%2C%20I%20need%20a%20quote%20for%20UPVC%20Windows%20%26%20Interiors" target="_blank" class="float-wa-btn" title="Chat on WhatsApp">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.19-.09-1.12-.55-1.3-.61-.17-.07-.3-.1-.43.1-.12.19-.49.61-.6.73-.11.13-.23.14-.42.05-.19-.09-.8-.29-1.53-.94-.57-.5-.95-1.12-1.06-1.31-.11-.19-.01-.29.08-.38.09-.09.19-.23.29-.35.09-.12.13-.2.19-.34.07-.14.03-.26-.02-.35-.05-.09-.43-1.04-.6-1.43-.16-.38-.32-.33-.43-.33h-.37c-.13 0-.34.05-.51.24-.18.19-.68.66-.68 1.62 0 .95.69 1.88.79 2.01.09.14 1.36 2.08 3.3 2.91.46.2.82.32 1.1.41.46.15.89.13 1.22.08.37-.06 1.12-.46 1.28-.9.16-.44.16-.82.11-.9-.04-.08-.17-.13-.36-.22z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="globalToast">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e88b12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastMsg">Thank you! Your request has been received.</span>
+  </div>
+
+  <script>
+    function showToast(msg) {
+      const toast = document.getElementById('globalToast');
+      document.getElementById('toastMsg').textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 4000);
+    }
+
+    function handleBooking(e) {
+      e.preventDefault();
+      const name = document.getElementById('leadName').value;
+      const phone = document.getElementById('leadPhone').value;
+      const service = document.getElementById('leadService').value;
+      const loc = document.getElementById('leadLoc').value;
+
+      showToast(`Thank you ${name}! Your free site survey appointment is confirmed. Our Bangalore team will contact you.`);
+      
+      // WhatsApp dispatch
+      const waMsg = `Hi Image Creator, I am ${encodeURIComponent(name)} from ${encodeURIComponent(loc)}. I would like a quote for ${encodeURIComponent(service)}. My phone is ${encodeURIComponent(phone)}.`;
+      setTimeout(() => {
+        window.open(`https://wa.me/919945263546?text=${waMsg}`, '_blank');
+      }, 1200);
+
+      e.target.reset();
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // UPVC PRODUCTS HORIZONTAL 3-CARD SLIDER
+    // ═══════════════════════════════════════════════════════════════
+    let currentProdIndex = 0;
+    const totalProdCards = 6;
+    let prodSliderTimer = null;
+
+    function getCardsPerView() {
+      if (window.innerWidth <= 768) return 1;
+      if (window.innerWidth <= 1024) return 2;
+      return 3;
+    }
+
+    function getMaxProdIndex() {
+      return Math.max(0, totalProdCards - getCardsPerView());
+    }
+
+    function updateProductSlider() {
+      const maxIndex = getMaxProdIndex();
+      if (currentProdIndex > maxIndex) currentProdIndex = maxIndex;
+      if (currentProdIndex < 0) currentProdIndex = 0;
+
+      const track = document.getElementById('productsTrack');
+      const cards = document.querySelectorAll('.prod-card-slide');
+      if (track && cards.length > 0) {
+        const cardWidth = cards[0].getBoundingClientRect().width;
+        const gap = 24;
+        const shiftAmount = currentProdIndex * (cardWidth + gap);
+        track.style.transform = `translateX(-${shiftAmount}px)`;
+      }
+
+      // Update dots
+      const dots = document.querySelectorAll('.prod-dot-btn');
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentProdIndex);
+      });
+    }
+
+    function nextProductSlide() {
+      const maxIndex = getMaxProdIndex();
+      currentProdIndex = (currentProdIndex >= maxIndex) ? 0 : currentProdIndex + 1;
+      updateProductSlider();
+    }
+
+    function prevProductSlide() {
+      const maxIndex = getMaxProdIndex();
+      currentProdIndex = (currentProdIndex <= 0) ? maxIndex : currentProdIndex - 1;
+      updateProductSlider();
+    }
+
+    function goToProductSlide(idx) {
+      currentProdIndex = idx;
+      updateProductSlider();
+    }
+
+    function selectProductFromNav(productIndex) {
+      const maxIndex = getMaxProdIndex();
+      currentProdIndex = Math.min(productIndex, maxIndex);
+      updateProductSlider();
+
+      // Scroll smoothly to products section
+      const section = document.getElementById('products');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Highlight selected product card briefly
+      setTimeout(() => {
+        const targetCard = document.getElementById(`prod-card-${productIndex}`);
+        if (targetCard) {
+          targetCard.style.borderColor = 'var(--brand-amber)';
+          targetCard.style.boxShadow = '0 0 0 3px rgba(232, 139, 18, 0.4)';
+          setTimeout(() => {
+            targetCard.style.borderColor = '';
+            targetCard.style.boxShadow = '';
+          }, 2000);
+        }
+      }, 600);
+    }
+
+    function startProductSlider() {
+      stopProductSlider();
+      prodSliderTimer = setInterval(nextProductSlide, 4500);
+    }
+
+    function stopProductSlider() {
+      if (prodSliderTimer) {
+        clearInterval(prodSliderTimer);
+        prodSliderTimer = null;
+      }
+    }
+
+    window.addEventListener('resize', updateProductSlider);
+
+    // ═══════════════════════════════════════════════════════════════
+    // MODULAR INTERIORS AUTO-SLIDING CAROUSEL
+    // ═══════════════════════════════════════════════════════════════
+    let currentSlide = 0;
+    const totalSlides = 4;
+    let slideTimer = null;
+    let progressTimer = null;
+    let progressVal = 0;
+    const slideDuration = 4000;
+
+    function goToSlide(index) {
+      currentSlide = (index + totalSlides) % totalSlides;
+      const track = document.getElementById('interiorTrack');
+      if (track) {
+        track.style.transform = `translateX(-${currentSlide * 25}%)`;
+      }
+      const dots = document.querySelectorAll('.slider-dots .slider-dot');
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentSlide);
+      });
+      resetProgressBar();
+    }
+
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentSlide - 1);
+    }
+
+    function resetProgressBar() {
+      progressVal = 0;
+      const bar = document.getElementById('interiorProgress');
+      if (bar) bar.style.width = '0%';
+    }
+
+    function startAutoSlide() {
+      stopAutoSlide();
+      resetProgressBar();
+      
+      progressTimer = setInterval(() => {
+        progressVal += (100 / (slideDuration / 50));
+        const bar = document.getElementById('interiorProgress');
+        if (bar) bar.style.width = Math.min(progressVal, 100) + '%';
+      }, 50);
+
+      slideTimer = setInterval(() => {
+        nextSlide();
+      }, slideDuration);
+    }
+
+    function stopAutoSlide() {
+      if (slideTimer) {
+        clearInterval(slideTimer);
+        slideTimer = null;
+      }
+      if (progressTimer) {
+        clearInterval(progressTimer);
+        progressTimer = null;
+      }
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // ANIMATED HERO QUOTE ROTATOR
+    // ═══════════════════════════════════════════════════════════════
+    const heroQuotes = [
+      "“Crafting Peaceful Homes with Architectural Precision.”",
+      "“Precision Engineered UPVC & Bespoke Home Interiors.”",
+      "“Bangalore's Leading Custom Window & Interior Specialist.”"
+    ];
+    let currentQuoteIdx = 0;
+
+    function rotateHeroQuote() {
+      const el = document.getElementById('animatedQuote');
+      if (!el) return;
+
+      el.classList.add('fade-out');
+      setTimeout(() => {
+        currentQuoteIdx = (currentQuoteIdx + 1) % heroQuotes.length;
+        el.textContent = heroQuotes[currentQuoteIdx];
+        el.classList.remove('fade-out');
+        el.classList.add('fade-in');
+        setTimeout(() => {
+          el.classList.remove('fade-in');
+        }, 450);
+      }, 450);
+    }
+
+    // Initialize sliders & animations on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      startProductSlider();
+      startAutoSlide();
+      setInterval(rotateHeroQuote, 3800);
+
+      // Set default date to tomorrow
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const dateStr = tomorrow.toISOString().split('T')[0];
+      const dateInput = document.getElementById('leadDate');
+      if (dateInput) dateInput.value = dateStr;
+    });
+  </script>
+</body>
+</html>
