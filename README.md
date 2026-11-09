@@ -66,11 +66,23 @@ IC Web/
 
 ---
 
-## 🌐 Deploy to GitHub Pages (Free Hosting)
+## 🌐 Deployment
+
+### Option A: Deploy to Netlify (Recommended)
+
+1. Go to [Netlify](https://app.netlify.com/) and sign in with your GitHub account.
+2. Click **"Add new site"** > **"Import an existing project"**.
+3. Select **GitHub** and choose your repository: `Image-Creator-Web-App`.
+4. Netlify will auto-detect settings from `netlify.toml` (Publish directory: `.`).
+5. Click **"Deploy site"**. Your website is now live with automated SSL!
+
+---
+
+### Option B: Deploy to GitHub Pages (Free Hosting)
 
 1. Push this repository to GitHub.
 2. In your repository on GitHub, go to **Settings** > **Pages**.
-3. Under **Branch**, select `main` (or `master`) and folder `/ (root)`.
+3. Under **Branch**, select `main` and folder `/ (root)`.
 4. Click **Save**. Your website will be live in a few moments!
 
 ---
